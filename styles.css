@@ -181,6 +181,13 @@ h3 { font-size: 19px; letter-spacing: -0.01em; line-height: 1.3; margin: 0 0 6px
 .shot.contain img { object-fit: contain; object-position: center; }
 .project.text-only { background: transparent; border-style: dashed; }
 .sub { margin: 48px 0 18px; font-size: 20px; }
+.project-body .links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: auto; }
+.project.feature .project-body .links { margin-top: 8px; }
+.project-body .links .link { margin-top: 0; }
+.project-body .note { font-size: 13px; margin: 12px 0 0; }
+.shot-center img { object-position: center 25%; }
+.projects.single { grid-template-columns: 1fr; max-width: calc(50% - 14px); }
+@media (max-width: 640px) { .projects.single { max-width: none; } }
 
 .link { color: var(--blue); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 .link:hover { text-decoration-thickness: 2.5px; }
